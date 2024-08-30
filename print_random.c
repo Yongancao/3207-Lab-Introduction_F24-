@@ -10,7 +10,7 @@ int main() {
     srand(time(NULL));
 
     printf("Random 7 letter word: %s\n", rand_string_alloc(7));
-
+    
     return 0;
 }
 
@@ -24,6 +24,7 @@ char* rand_string_alloc(size_t size)
      return s;
 }
 
+// create the random letters of size
 void rand_string(char *s, size_t size){
     for (int i = 0; i < size; i++) {
         s[i] = randchar();
